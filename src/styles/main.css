@@ -1,0 +1,39 @@
+.v-content .v-card.v-sheet {
+    transition: all .3s ease-out!important;
+  }
+
+  .v-content .v-card.v-sheet:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 2px 20px 0 rgba(0,0,0,.08);
+    transition: all .3s ease-out!important;
+  }
+
+  .v-content .v-card.v-sheet.theme--light::before {
+    content: '';
+    background: linear-gradient(0deg,#753bbd 10%,#00a9ce 45%);
+    height: calc(100% + 2px);
+    width: 8px;
+    position: absolute;
+    z-index: 1;
+    left: -1px;
+    top: -1px;
+    border-bottom-left-radius: inherit;
+    border-top-left-radius: inherit;
+}
+
+.du-card--elem {
+  border-bottom: 1px solid #ccc;
+}
+
+.du-card__limited {
+  background: linear-gradient(45deg,#824bc7 6%,#d92cc1 53%);
+}
+
+.du-card__button {
+  width: 100%;
+}
+
+.du-card__benefit::before {
+  content: "\2713";
+  padding-right: 7px;
+}
